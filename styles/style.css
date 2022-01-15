@@ -2,8 +2,49 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 40px;
 
+/* }connector */
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
 }
 .connector{
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-top: 95px;
+    justify-content: center;
+    align-items: center;
+/* }------------------------------------------------------ */
+/* Header Part */
+#navigation-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navigation-container ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#navigation-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+#navigation-container li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* end */
+/* First Section */
+.intro-sec{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-row-gap: 30px;
@@ -48,7 +89,9 @@ height: 270px;
 margin-left: 133px;
 padding-bottom: 100px;
 }
+/* End */
 
+/* Brand Part */
 .logos{
     border-top: 1px solid darkgray;
     border-bottom:1px solid darkgray;
@@ -59,22 +102,22 @@ padding-bottom: 100px;
     display: grid;
     grid-template-columns:repeat(7,1fr);
     justify-items: center;
-    padding: 20px,0;
+    grid-column-gap: 40px;
 }
 .brand-logo img{
     width:55px;
     height: 31px;
-    
 }
+/* -------------------------------- */
+/* third Section */
 .section-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 30px;
+    grid-column-gap: 30px;
 }
-#collection-heading{
+.component-heading{
 text-align: center;
-height: 70px;
-width: 262px;
 font: size 28px;
 }
 .collection-ditails{
@@ -120,6 +163,8 @@ font-size: 12px;
     color:#787885;
 
 }
+/* --------------------------------------------- */
+/* Bonus Part */
 .extra{
     width: 1110px;
 height: 270px;
@@ -152,34 +197,42 @@ color:#0A0826;
     Width:501px;
 Height:px;
 color:#6C6C6C;
-}
-footer{
-    color:whitesmoke;
+/* }--------------------------------------------- */
+/* Footer */
+footer {
     text-align: center;
-    background: #110422;
+    color: white;
+    background-color: #0A0826;
+    padding: 50px 289px;
+    width: 100%;
 }
-.social-network{
+footer .social-network {
+    margin-left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 17px;
-
 }
 footer i{
     font-size: 32px;
     margin-right: 16px;
 }
+/* --------------------------------- */
+/* Media  query*/
 
+@media only screen and (max-width: 688px) {
 
-@media  only screen and (max-width:768) {
-    .conector,.logos,.sec-no-3.extra,.last-saction{
-width:100%;
-    }
-    .product-ditails,.brands,.section-grid,.extra {
-        grid-template-columns:repeat(1,1fr);
-    }.product-ditails,.product-img,.brand-logo,.collection-ditails,.extra{
-
-        flex-direction: column;
+    .connector,.brands,.section-grid,.extra{
+        grid-template-columns: repeat(1,1fr);
     }
     
+}
+@media only screen and (min-width: 688px) and (max-width:992px) {
+
+    .connector,.brands,.section-grid,.extra{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .social-network,.connector,.brand,.section-grid,.extra{
+        flex-direction: column;
+    }
 }
