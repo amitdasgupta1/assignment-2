@@ -1,7 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 40px;
-
+}
 /* }connector */
 main{
     display:flex;
@@ -15,8 +15,27 @@ main{
     margin-top: 95px;
     justify-content: center;
     align-items: center;
+}
+.zoom {
+    transition: transform .5s; 
+    
+  }
+  
+.zoom:hover {
+    transform: scale(1.1); 
+    
+  }
+.zoom1 {
+    transition: transform .5s;
+}
+.zoom1:hover {
+    transform: scale(1.3);
+}
 /* }------------------------------------------------------ */
 /* Header Part */
+.top-header{
+ padding-left: 120px;
+}
 #navigation-container {
     position: relative;
     display: flex;
@@ -128,7 +147,7 @@ box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 border-radius: 5px;
 padding: 10px 50px;
 }
-.collection-ditails-img img{
+.collection-img{
     width: 300px;
     height: 256px;
     border-radius: 5px;
@@ -197,6 +216,7 @@ color:#0A0826;
     Width:501px;
 Height:px;
 color:#6C6C6C;
+}
 /* }--------------------------------------------- */
 /* Footer */
 footer {
@@ -217,20 +237,22 @@ footer i{
     font-size: 32px;
     margin-right: 16px;
 }
-/* --------------------------------- */
-/* Media  query*/
-
-@media only screen and (max-width: 688px) {
-
-    .connector,.brands,.section-grid,.extra{
+/* --------------------------------- *
+ /* -media query */
+@media only screen and(max-width:688px) {
+    connector{
+        width: 100%;
+    }
+    .intro-sec{
         grid-template-columns: repeat(1,1fr);
     }
     
 }
 @media only screen and (min-width: 688px) and (max-width:992px) {
 
-    .connector,.brands,.section-grid,.extra{
+    .intro-sec,.brand,.section-grid,.extra{
         grid-template-columns: repeat(2,1fr);
     }
+    
     
 }
