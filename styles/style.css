@@ -36,6 +36,9 @@ font-size: 52px;
     transition: 0.5s;
     
 }
+.booking-button:hover{
+    transform: scale(1.1);
+}
  
 
 }
@@ -47,7 +50,9 @@ padding-bottom: 100px;
 }
 
 .logos{
-    border: 1px solid rgb(121, 108, 108);
+    border-top: 1px solid darkgray;
+    border-bottom:1px solid darkgray;
+    padding: 10px 20px;
     margin: 80px 165px;
 }
 .brands{
@@ -85,17 +90,20 @@ padding: 10px 50px;
     height: 256px;
     border-radius: 5px;
 }
+.collection-ditails:hover{
+    transform: scale(1.1);
+}
 .img-heading{
    
     Width:173px;Height:40px;
     color: #18191F;
-    font-size: 20px;
+    font-size: 15px;
 }
 .collection-price{
     Width:92px;
 Height :36px;
 color:#000000;
-font-size: 16px;
+font-size: 12px;
 }
 .fa-star{
    width:16px;
@@ -121,10 +129,10 @@ grid-template-columns: repeat(2,1fr);
 }
 .extra-sec-button button{
     background: #E02C6D;
-    padding: 10px 24px;
+    padding: 5px 24px;
     border:none;
-    width: 196px;
-    height: 44px;
+    width: 120px;
+    height: 030px;
     border-radius: 5px;
     font-size: 15px;
     color: whitesmoke;
@@ -142,7 +150,7 @@ color:#0A0826;
 }
 .extra-parag{
     Width:501px;
-Height:88px;
+Height:px;
 color:#6C6C6C;
 }
 footer{
@@ -151,5 +159,27 @@ footer{
     background: #110422;
 }
 .social-network{
-    row-gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+
+}
+footer i{
+    font-size: 32px;
+    margin-right: 16px;
+}
+
+
+@media  only screen and (max-width:768) {
+    .conector,.logos,.sec-no-3.extra,.last-saction{
+width:100%;
+    }
+    .product-ditails,.brands,.section-grid,.extra {
+        grid-template-columns:repeat(1,1fr);
+    }.product-ditails,.product-img,.brand-logo,.collection-ditails,.extra{
+
+        flex-direction: column;
+    }
+    
 }
