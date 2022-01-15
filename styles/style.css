@@ -232,7 +232,5 @@ footer i{
     .connector,.brands,.section-grid,.extra{
         grid-template-columns: repeat(2,1fr);
     }
-    .social-network,.connector,.brand,.section-grid,.extra{
-        flex-direction: column;
-    }
+    
 }
